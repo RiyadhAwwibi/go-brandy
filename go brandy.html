@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GO BRANDY-HOME</title>
+    <link rel="stylesheet" href="go brandy style.css">
+    <script src="https://kit.fontawesome.com/b2cfab55b9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container-width">
+            <div class="nav-container">
+                <h1 class="navbar-title">GO BRANDY</h1>
+                <ul class="nav-items-container">
+                    <li class="nav-item"><a href="go brandy.html">HOME</a></li>
+                    <li class="nav-item"><a href="katalog.html">KATALOG</a></li>
+                    <li class="nav-item"><a href="trending.html">TRENDING</a></li>
+                    <li class="nav-item"><a href="daftar.html"><button class="tbl-orange">DAFTAR</button></a>
+                    </li>
+                </ul>
+                <div onclick="myMenuBtn()" class="nav-mobile-button">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <!-- RESPONSIVE NAVBAR -->
+        <ul id="el-menu" class="nav-items-container-mobile" style="display: none;">
+            <li class="nav-item"><a href="go brandy.html">HOME</a></li>
+            <li class="nav-item"><a href="katalog.html">KATALOG</a></li>
+            <li class="nav-item"><a href="trending.html">TRENDING</a></li>
+            <li class="nav-item"><a href="daftar.html"><button class="btn-mobile" onclick="myFunction()">DAFTAR</button></a>
+            </li>
+        </ul>
+        <div class="row">
+            <div class="col">
+                <h1 class="hero-title">Loved for style.</h1>
+                <h1 class="hero-title">Fashion.</h1>
+                <h1 class="hero-title">Design.</h1>
+                <p class="hero-subtitle">Tampil beda setiap hari dengan gaya yang baru</p>
+                <a href="trending.html"><button class="tbl-grey" onclick="myFunction()">Explore</button></a>
+            </div>
+            <div class="col">
+                <img class="hero-top-image" src="hero-top.png" alt="hero-top-image">
+            </div>
+        </div>
+    </nav>
+    <!-- CONTENT -->
+    <main class="main-container">
+        <h1 class="content-title">KATALOG</h1>
+        <div class="container-services">
+            <div class="col">
+                <img class="hero1-image" src="item1.jpg" alt="hero1-image">
+                <div class="details-item">
+                    <p><a href="#">See Details</a></p>
+                </div>
+            </div>
+            <div class="col">
+                <img class="hero2-image" src="item2.jpg" alt="hero2-image">
+                <div class="details-item">
+                    <p><a href="#">See Details</a></p>
+                </div>
+            </div>
+            <div class="col">
+                <img class="hero3-image" src="item3.jpg" alt="hero3-image">
+                <div class="details-item">
+                    <p><a href="#">See Details</a></p>
+                </div>
+            </div>
+            <div class="col">
+                <img class="hero4-image" src="item4.jpg" alt="hero4-image">
+                <div class="details-item">
+                    <p><a href="#">See Details</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="input-container">
+            <a href="katalog.html"><button class="tbl-brown" onclick="myFunction()">Lihat Semua</button></a>
+        </div>
+        <div class="main-row">
+            <div class="col">
+                <img class="hero-image" src="about-us.png" alt="hero-image">
+            </div>
+            <div class="col">
+                <h4 class="main-hero-title">ABOUT US</h4>
+                <h5 class="main-hero-subtitle">Go Brandy adalah tempat dimana semua orang mancari gaya yang mereka temukan. kami memberikan kepuasan dalam fashion dan kita mencintai itu. Brandy juga akan terus menyesuaikan diri dari berkembangnya zaman agar tetap menjadi yang terdepan.</h5>
+            </div>
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer-container">
+        <div class="footer-services">
+            <div class="footer-content">
+                <div class="subscriber-form">
+                    <h1 class="subs-title">Bergabung dengan kami
+                        dan dapatkan diskonya</h1>
+                    <p class="subs-subtitle">dengan berlangganan, kami akan mengirimkan berita terbaru dengan fashion dan lifestyle</p>
+                        <input class="input-subs" type="email" name="email" autocomplete="off" placeholder="e-mail">
+                        <button class="btn-subs" type="submit" onclick="myFunction()">SUBSCRIBE</button>
+                    </form>
+                </div>
+                <div class="sitemap">
+                    <div class="item">
+                        <h1>SERVICES</h1>
+                        <p><a href="#">Online Offical
+                                Store</a></p>
+                        <p><a href="#">Online Offical
+                                Store</a></p>
+                        <p><a href="#">Produk</a></p>
+                        <p><a href="#">Membership</a></p>
+                    </div>
+                    <div class="item">
+                        <h1>ABOUT US</h1>
+                        <p><a href="#">Tentang Kami</a></p>
+                        <p><a href="#">Misi kami</a></p>
+                    </div>
+                    <div class="item">
+                        <h1>GO BRANDY</h1>
+                        <p><a href="#">Gedung Diamond Brandy Corp, Jl. Pahlawan No 31 Jakarta Barat</a></p>
+                        <p><a href="#">0215563455</a></p>
+                        <p><a href="#">gobrandy@style.co.id</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="copyright-container">
+                <div class="copyright-content">
+                    <h1 class="footer-title">Copyright @GoBrandyStore 2022 all rights reserved</h1>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+    const myMenuBtn = () => {
+        let menu = document.getElementById('el-menu')
+        if (menu.style.display === 'none') {
+            menu.style.display = 'flex'
+        } else {
+            menu.style.display = 'none'
+        }
+    }
+    </script>
+</body>
+
+</html>
